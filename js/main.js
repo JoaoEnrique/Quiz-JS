@@ -1,6 +1,6 @@
 perguntas = document.querySelectorAll(".pergunta");//div das perguntas
 respostaUsuario = [] // valor que o usuario escolheu pra comparar com a resposta certa e mostrar se esta certo ou errada no final
- 
+
 //contar questoes certas e erradas
 questCerto = 0;
 questErrado = 0;
