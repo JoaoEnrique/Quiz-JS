@@ -171,3 +171,145 @@ a{
 .timer{
     font-size: 20px;
 }
+
+@media screen and (max-width: 1072px){
+    header h1{
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 912px){
+    header h1{
+        margin-top: 150px;
+        font-size: 45px;
+        margin-bottom: 50px;
+    }
+    header h2{
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+
+    .btn-comecar, .btn-comecar-tempo{
+        margin-left:10px;
+        font-size: 35px;
+    }
+
+    h1{
+        font-size: 45px;
+    }
+    h3{
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+    label{
+        font-size: 30px;
+        padding: 15px;
+    }
+    .btn-proximo{
+        font-size: 30px;
+        width: 200px;
+    }
+    main{
+        padding: 50px;
+    }
+    .timer{
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width: 540px){
+    main{
+        padding: 0 10px;
+    }
+
+    .pergunta{
+        padding: 30px 30px;
+    }
+
+    header h1{
+        margin-top: 80px;
+        font-size: 45px;
+        margin-bottom: 70px;
+    }
+    header h2{
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+
+    .btn-comecar, .btn-comecar-tempo{
+        margin-left:10px;
+        font-size: 35px;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+    h3{
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    label{
+        font-size: 30px;
+        padding: 15px;
+    }
+    .btn-proximo{
+        font-size: 30px;
+        width: 200px;
+    }
+    main{
+        padding: 30px;
+    }
+    .timer{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 280px){
+    main{
+        padding: 0 10px;
+    }
+
+    .pergunta{
+        padding: 30px 30px;
+    }
+
+    header h1{
+        margin-top: 80px;
+        font-size: 35px;
+    }
+    header h2{
+        font-size: 20px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+
+    .btn-comecar, .btn-comecar-tempo{
+        margin-left:5px;
+        margin-top: 50px;
+        font-size: 25px;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+    h3{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    label{
+        font-size: 25px;
+        padding: 10px;
+    }
+    .btn-proximo{
+        font-size: 30px;
+        width: 200px;
+    }
+    main{
+        padding: 0px;
+    }
+    .timer{
+        font-size: 40px;
+    }
+}
