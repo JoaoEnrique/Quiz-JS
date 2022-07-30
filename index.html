@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <header>
+        <h1>Quiz Sobre física</h1>
+        <h2>Desenvolvido pelo <a href="http://github.com/JoaoEnrique" target="_blank" rel="noopener noreferrer">@João Enrique</a>, com HTML, CSS e JavaScript puro</h2>
+        <button class="btn-comecar">Começar</button>
+        <button class="btn-comecar-tempo">Com Tempo</button>
+    </header>
+
+    <main>
+        <div class="status">
+            <div class="porcentagem"></div>
+        </div>
+
+        <div class="timer">
+            <span class="minutos">05</span> :
+            <span class="segundos">00</span>
+        </div>
+
+        <div class="tempo-esgotado">
+            <h1>Quem pena ;-;</h1>
+            <h3>Infelizmente o tempo acabou. Você acertou <span class="acertos"></span> Questões</h3>
+            <button class="btn-tentar" onclick="recomecar()">Tentar Novamente</button>
+        </div>
+
+        <div class="final">
+            <span class="parabens">
+                <h1></h1>
+                <h2></h2>
+            </span>
+
+            <button class="btn-tentar" onclick="recomecar()">Tentar Novamente</button>
+        </div>
+
+        <div class="pergunta">
+            <h1>Pergunta 1</h1>
+             
+            <form action="">
+                <h3>O que é a gravidade?</h3>
+                <input type="radio" name="gravidade" id="forca">
+                <label for="forca">Força</label><br>
+               
+                <input type="radio" name="gravidade" id="aceleracao">
+                <label for="aceleracao">Aceleração</label><br>
+
+                <input type="radio" name="gravidade" id="espaco">
+                <label class="correta" for="espaco">Distorção do Espaco-Tempo</label><br>
+
+                <input type="radio" name="gravidade" id="nenhum">
+                <label for="nenhum">Nenhuma das alternativas</label><br>       
+            </form>
+            <button class="btn-proximo" onclick="proximo()">Próximo</button>
+        </div>
+
+        <div class="pergunta">
+            <h1>Pergunta 2</h1>
+                             
+            <form action="">
+                <h3>Quando Albert Einstein Publicou a Teoria da Relatividade Geral?</h3>
+                <input type="radio" name="relatividade" id="1915">
+                <label class="correta" for="1915">1915</label><br>
+        
+                <input type="radio" name="relatividade" id="1925">
+                <label for="1925">1925</label><br>
+            
+                <input type="radio" name="relatividade" id="1927">
+                <label for="1927">1927</label><br>
+        
+                <input type="radio" name="relatividade" id="1905">
+                <label for="1905">1905</label><br>
+            </form>
+            <button class="btn-proximo" onclick="proximo()">Próximo</button>
+        </div>
+
+        <div class="pergunta">
+            <h1>Pergunta 3</h1>
+                             
+            <form action="">
+                <h3>Qual o "Combustível" do Sol?</h3>
+                <input type="radio" name="sol" id="helio">
+                <label for="helio">Hélio</label><br>
+
+                <input type="radio" name="sol" id="hidrogenio">
+                <label class="correta" for="hidrogenio">Hidrogênio</label><br>
+            
+                <input type="radio" name="sol" id="mercurio">
+                <label for="mercurio">Mercúrio</label><br>
+        
+                <input type="radio" name="sol" id="nitrogenio">
+                <label for="nitrogenio">Nitrogênio</label><br>
+            </form>
+            <button class="btn-proximo" onclick="proximo()">Próximo</button>
+        </div>
+
+        <div class="pergunta">
+            <h1>Pergunta 4</h1>
+                             
+            <form action="">
+                <h3>Qual é a definição de Temperatura?</h3>
+                <input type="radio" name="temperatura" id="statusCalor">
+                <label for="statusCalor">Grandeza escalar que define o status de calor de um corpo</label><br>
+        
+                <input type="radio" name="temperatura" id="statusTermico">
+                <label  class="correta" for="statusTermico">Grandeza escalar que define o status térmico de um corpo ou sistema de corpos.</label><br>
+            
+                <input type="radio" name="temperatura" id="grandezaVetorial">
+                <label for="grandezaVetorial">Grandeza vetorial que define o status térmico de um corpo.</label><br>
+        
+                <input type="radio" name="temperatura" id="calorSistema">
+                <label for="calorSistema">Unidade de medida utilizada para medir o calor de um sistema</label><br>
+            </form>
+            <button class="btn-proximo" onclick="proximo()">Próximo</button>
+        </div>
+
+        <div class="pergunta">
+            <h1>Pergunta 5</h1>
+                             
+            <form action="">
+                <h3>Qual das definições abaixo define corretamente o conceito de calor?</h3>
+                <input type="radio" name="calor" id="diferencaTemperatura">
+                <label for="diferencaTemperatura">É a diferença da primeira temperatura corpo e da última temperatura do corpo.</label><br>
+        
+                <input type="radio" name="calor" id="semAgitacao">
+                <label for="semAgitacao">É o grau quase nulo de agitação das moléculas/átomos presentes em um corpo.</label><br>
+            
+                <input type="radio" name="calor" id="25Graus">
+                <label for="25Graus">É o momento em que a temperatura de um corpo ultrapassa (na escala Celsius) a medida vetorial de 25 graus</label><br>
+        
+                <input type="radio" name="calor" id="agitacaoAtomos">
+                <label class="correta" for="agitacaoAtomos">É o grau elevado de agitação das moléculas/átomos presentes em um corpo.</label><br>
+            </form>
+            <button class="btn-proximo" onclick="proximo()">Próximo</button>
+        </div>
+
+        <div class="pergunta">
+            <h1>Pergunta 6</h1>
+                             
+            <form action="">
+                <h3>Qual é o valor exato da gravidade terrestre?</h3>
+                <input type="radio" name="valorGravidade" id="23">
+                <label for="23">23 m/s</label><br>
+            
+                <input type="radio" name="valorGravidade" id="9.9">
+                <label for="9.9">9.9 m/s</label><br>
+
+                <input type="radio" name="valorGravidade" id="9.807">
+                <label class="correta" for="9.807">9.807 m/s</label><br>
+        
+                <input type="radio" name="valorGravidade" id="8.9">
+                <label for="8.9">8.9 m/s</label><br>
+            </form>
+            <button class="btn-proximo" onclick="proximo()">Próximo</button>
+        </div>
+
+        <div class="pergunta">
+            <h1>Pergunta 7</h1>
+                             
+            <form action="">
+                <h3>O que é um buraco negro?</h3>
+                <input type="radio" name="buracoNegro" id="buraco">
+                <label for="buraco">É um buraco no espaço.</label><br>
+            
+                <input type="radio" name="buracoNegro" id="neutros">
+                <label for="neutros">É algo semelhante a uma estrela de nêutrons.</label><br>
+
+                <input type="radio" name="buracoNegro" id="estrelaMorta">
+                <label class="correta" for="estrelaMorta">Uma Estrela que morreu</label><br>
+        
+                <input type="radio" name="buracoNegro" id="massaNegra">
+                <label for="massaNegra">É uma massa negra espacial que é capaz de sugar apenas a luz</label><br>
+            </form>
+            <button class="btn-proximo" onclick="proximo()">Próximo</button>
+        </div>
+
+        <div class="pergunta">
+            <h1>Pergunta 8</h1>
+                             
+            <form action="">
+                <h3>Qual é a terceira lei de Newton?</h3>
+                <input type="radio" name="newton" id="gravitacao">
+                <label for="gravitacao">Gravitação universal</label><br>
+        
+                <input type="radio" name="newton" id="distancia">
+                <label for="distancia">O quadrado da distância multiplicado pela velocidade de um objeto é equivalente a terceira lei.</label><br>
+            
+                <input type="radio" name="newton" id="acaoReacao">
+                <label class="correta" for="acaoReacao">Ação e reação</label><br>
+        
+                <input type="radio" name="newton" id="inercia">
+                <label for="inercia">Inércia</label><br>
+            </form>
+            <button class="btn-proximo" onclick="proximo()">Próximo</button>
+        </div>
+
+        <div class="pergunta">
+            <h1>Pergunta 9</h1>
+                             
+            <form action="">
+                <h3>Potência pode ser definida por qual alternativa abaixo?</h3>
+                <input type="radio" name="potencia" id="logaritimo">
+                <label for="logaritimo">É definida pelo cálculo logarítmico entre o tempo que o trabalho é realizado e a massa do objeto movido.</label><br>
+        
+                <input type="radio" name="potencia" id="quadrado">
+                <label for="quadrado">É definida pelo quadrado da raiz cúbica do trabalho realizado pelo corpo.</label><br>
+            
+                <input type="radio" name="potencia" id="razaoTrabalhoTempo">
+                <label class="correta" for="razaoTrabalhoTempo">Potência é definida pela razão entre o trabalho realizado e o tempo em que é executado o trabalho.</label><br>
+        
+                <input type="radio" name="potencia" id="multiplicacaoPesoEnergia">
+                <label for="multiplicacaoPesoEnergia">É definida pela multiplicação entre o peso e a energia do corpo que realiza o trabalho.</label><br>
+            </form>
+            <button class="btn-proximo" onclick="proximo()">Próximo</button>
+        </div>
+
+        <div class="pergunta">
+            <h1>Pergunta 10</h1>
+                             
+            <form action="">
+                <h3>Qual é a medida no S.I. de luminosidade?</h3>
+                <input type="radio" name="luminosidade" id="candela">
+                <label class="correta" for="candela">Candela</label><br>
+        
+                <input type="radio" name="luminosidade" id="watt">
+                <label for="watt">Watt</label><br>
+            
+                <input type="radio" name="luminosidade" id="joule">
+                <label for="joule">Joule</label><br>
+        
+                <input type="radio" name="luminosidade" id="coulomb">
+                <label for="coulomb">Coulomb</label><br>
+            </form>
+            <button class="btn-proximo" onclick="fim()">Próximo</button>
+        </div>
+
+        
+    </main>
+
+    <script src="js/main.js"></script>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

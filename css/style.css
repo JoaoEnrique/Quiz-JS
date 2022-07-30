@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.pergunta{
+    width: 100%;
+    background: rgba(233, 231, 231, 0.658);
+    padding: 50px 50px;
+    border-radius: 10px;
+}
+
+main{
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1{
+    margin: 20px 0;
+}
+
+h3{
+    margin: 10px 0;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+label{
+    background: dodgerblue;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+label:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+input[type=radio]:checked + label{
+    transform: scale(1.1);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btn-proximo{
+    background: darkgreen;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    width: 100px;
+    display: grid;
+    place-items: center;
+}
+
+.btn-proximo:hover{
+    opacity: 0.7;
+}
+
+.btn-proximo:disabled{
+    opacity: 0.5;
+    cursor: auto;
+}
+
+.final{
+    background: rgba(233, 231, 231, 0.658);
+    padding: 100px 100px;
+    border-radius: 10px;
+    display: none;
+    width: 100%;
+}
+
+.btn-tentar{
+    background: darkgreen;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.parabens h2{
+    margin-bottom:100px;
+}
+
+.status{
+    width: 100%;
+    height: 5px;
+    background: rgba(233, 231, 231, 0.658);
+}
+
+.porcentagem{
+    height: 100%;
+    width: 0%;
+    background: dodgerblue;
+    transition: 1s;
+}
+
+header{
+    background: dodgerblue;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+header h1{
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+}
+header h2{
+    width: 100%;
+    margin-top: -300px;
+    text-align: center;
+}
+
+.btn-comecar, .btn-comecar-tempo{
+    color: dodgerblue;
+    border-radius: 5px;
+    border: 1px solid dodgerblue;
+    font-size: 30px;
+    margin-top: 50px;
+    cursor: pointer;
+    padding: 10px;
+    background: #fff;
+    transition: 0.5s;
+    margin-top: -400px;
+}
+
+.btn-comecar:hover, .btn-comecar-tempo:hover{
+    color: #fff;
+    border: 1px solid #fff;
+    background: dodgerblue;
+}
+
+a{
+    color: #fff;
+    text-decoration-style: wavy;
+}
+
+.tempo-esgotado{
+    background: rgb(255, 0, 0, 0.315);
+    padding: 50px 50px;
+    border-radius: 5px;
+    display: none;
+}
+
+.timer{
+    font-size: 20px;
+}
