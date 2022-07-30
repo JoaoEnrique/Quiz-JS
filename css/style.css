@@ -5,14 +5,14 @@
     font-family: Arial;
 }
 
-.pergunta{
+.pergunta{/*div cinza que contem as perguntas*/
     width: 100%;
     background: rgba(233, 231, 231, 0.658);
     padding: 50px 50px;
     border-radius: 10px;
 }
 
-main{
+main{/*corpo do site*/
     padding: 0 100px;
     display: flex;
     justify-content: center;
@@ -20,19 +20,19 @@ main{
     flex-wrap: wrap;
 }
 
-h1{
+h1{/*numero da pergunta (Pergunta x)*/
     margin: 20px 0;
 }
 
-h3{
+h3{/*Pergunta*/
     margin: 10px 0;
 }
 
-input[type=radio]{
+input[type=radio]{/*Tirar os inputs e deixar apenas os labels*/
     display: none;
 }
 
-label{
+label{/*respostas*/
     background: dodgerblue;
     color: #fff;
     font-size: 20px;
@@ -41,22 +41,22 @@ label{
     transition: 0.5s;
 }
 
-label:hover{
+label:hover{/*respostas*/
     opacity: 0.7;
     cursor: pointer;
 }
 
-input[type=radio]:checked + label{
+input[type=radio]:checked + label{/*respostas ao clicar em uma opcao*/
     transform: scale(1.1);
 }
 
-form{
+form{/*alinhar itens do formulario*/
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.btn-proximo{
+.btn-proximo{/*botao para passar pergunta*/
     background: darkgreen;
     border: 1px solid darkgreen;
     border-radius: 5px;
@@ -68,16 +68,16 @@ form{
     place-items: center;
 }
 
-.btn-proximo:hover{
+.btn-proximo:hover{/*botao para passar pergunta*/
     opacity: 0.7;
 }
 
-.btn-proximo:disabled{
+.btn-proximo:disabled{/*botao para passar pergunta (desativado)*/
     opacity: 0.5;
     cursor: auto;
 }
 
-.final{
+.final{/*tela final (aparece apenas no final)*/
     background: rgba(233, 231, 231, 0.658);
     padding: 100px 100px;
     border-radius: 10px;
@@ -85,7 +85,7 @@ form{
     width: 100%;
 }
 
-.btn-tentar{
+.btn-tentar{/*botao para tentar novamente caso o tempo acabe*/
     background: darkgreen;
     border: 1px solid darkgreen;
     border-radius: 5px;
@@ -98,24 +98,24 @@ form{
     place-items: center;
 }
 
-.parabens h2{
+.parabens h2{/*texto de parabens no final*/
     margin-bottom:100px;
 }
 
-.status{
+.status{/*barra de status das perguntas*/
     width: 100%;
     height: 5px;
     background: rgba(233, 231, 231, 0.658);
 }
 
-.porcentagem{
+.porcentagem{/*percentagem da barra de status*/
     height: 100%;
     width: 0%;
     background: dodgerblue;
     transition: 1s;
 }
 
-header{
+header{/*tela que aparece antes das perguntas*/
     background: dodgerblue;
     min-height: 100vh;
     display: flex;
@@ -125,19 +125,19 @@ header{
     color: #fff;
 }
 
-header h1{
+header h1{/*titulo da primeira tela*/
     font-size: 35px;
     width: 100%;
     text-align: center;
     margin-top: 200px;
 }
-header h2{
+header h2{/*texto da primeira tela*/
     width: 100%;
     margin-top: -300px;
     text-align: center;
 }
 
-.btn-comecar, .btn-comecar-tempo{
+.btn-comecar, .btn-comecar-tempo{/*botoes da primeira tela*/
     color: dodgerblue;
     border-radius: 5px;
     border: 1px solid dodgerblue;
@@ -150,7 +150,7 @@ header h2{
     margin-top: -400px;
 }
 
-.btn-comecar:hover, .btn-comecar-tempo:hover{
+.btn-comecar:hover, .btn-comecar-tempo:hover{/*botoes da primeira tela*/
     color: #fff;
     border: 1px solid #fff;
     background: dodgerblue;
@@ -161,17 +161,19 @@ a{
     text-decoration-style: wavy;
 }
 
-.tempo-esgotado{
+.tempo-esgotado{/*tela d tempo esgotado*/
     background: rgb(255, 0, 0, 0.315);
     padding: 50px 50px;
     border-radius: 5px;
     display: none;
 }
 
-.timer{
+.timer{/*contagem para o tempo das perguntas*/
     font-size: 20px;
 }
 
+
+/* deixar site responsivo */
 @media screen and (max-width: 1072px){
     header h1{
         margin-top: 150px;
